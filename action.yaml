@@ -1,0 +1,19 @@
+name: 'Telegram Message Notify with Topic'
+description: 'Sending a Telegram message with topic support'
+author: 'Maus007'
+inputs:
+  TO:
+    description: 'telegram ChatId'
+  TELEGRAM_TOKEN:
+    description: 'telegram token'
+  MESSAGE:
+    description: 'telegram message'
+  TOPIC:
+    description: 'telegram message_thread_id'
+    optional: true
+  PARSE_MODE:
+    description: 'telegram message parse mode'
+    optional: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
