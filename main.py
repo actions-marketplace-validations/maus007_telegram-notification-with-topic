@@ -30,4 +30,4 @@ def send_to_telegram(message):
         print(e)
 
 
-send_to_telegram(os.environ("INPUT_MESSAGE"))
+send_to_telegram(os.environ["INPUT_MESSAGE"])
