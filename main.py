@@ -3,8 +3,8 @@ import requests
 import os, sys
 
 def send_to_telegram(message):
-    TOKEN = os.environ["IMPUT_TELEGRAM_TOKEN"]
-    TO = os.environ["IMPUT_TELEGRAM_TO"]
+    TOKEN = os.environ["INPUT_TELEGRAM_TOKEN"]
+    TO = os.environ["INPUT_TELEGRAM_TO"]
     TOPIC = os.getenv("INPUT_TELEGRAM_TOPIC", default=None)
     apiURL = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
     parse_mode = os.getenv("INPUT_PARSE_MODE", default="markdown")
